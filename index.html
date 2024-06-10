@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Search Platform</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Basic Search Platform</h1>
+
+    <!-- Search Input -->
+    <div>
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button onclick="searchDatabase()">Search</button>
+    </div>
+
+    <!-- Add to Database Panel -->
+    <div>
+      <h2>Add to Database</h2>
+      <input type="text" id="addInput" placeholder="Add Item..." />
+      <button onclick="addToDatabase()">Add</button>
+    </div>
+
+    <!-- Update Database Panel -->
+    <div>
+      <h2>Update Database</h2>
+      <input type="text" id="updateId" placeholder="Item ID..." />
+      <input type="text" id="updateInput" placeholder="New Item..." />
+      <button onclick="updateDatabase()">Update</button>
+    </div>
+
+    <!-- Search Results Panel -->
+    <div>
+      <h2>Search Results</h2>
+      <ul id="searchResults"></ul>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
